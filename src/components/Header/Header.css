@@ -1,4 +1,7 @@
-.header .navbar{
+.header .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: #2b3648 !important;
 }
 a.navbar-brand {
