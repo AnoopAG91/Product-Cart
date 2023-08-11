@@ -1,5 +1,6 @@
 .wrapper {
-    margin-top: 1rem;
+    margin-top: 6rem;
+    text-align: center;
 }
 .productCart-container {
     display: flex;
@@ -24,11 +25,12 @@
     flex-direction: column;
     gap: 20px;
 }
-button {
+.cart-btn button{
     background-color: red;
     color: white;
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 

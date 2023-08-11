@@ -8,6 +8,7 @@ import { remove } from '../Store/CartSlice'   // importing remove action from ca
 function Cart() {
  
   const dispatch = useDispatch()     // creating a variable to use usedispatch hook.
+  
   const productCart = useSelector(state => state.cart)   // creating a variable to use useselector hook to get the state of cart.
 
   function removeCart(id){   // remove cart function takes id of the product as parameter to remove the item.
@@ -33,10 +34,10 @@ function Cart() {
 
                 <div className='product-content'>
                   <h3>{product.title}</h3>
-                  <h6>{product.price}</h6>
+                  <h6>{product.price} $</h6>
                 </div>
 
-                <div className='product-btn'>
+                <div className='cart-btn'>
                   <button onClick={()=> removeCart(product.id)} style={{backgroundColor:'red'}}>Remove Item</button>  
                   {/* onclick event removecart function takes the id of the product to remove the item by its unique id. */}
                 </div>

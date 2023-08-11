@@ -4,6 +4,7 @@ import './products.css'
 import Header from '../Header/Header'
 import { useDispatch } from 'react-redux'   // usedispatch hook is used to dipatch the actions.
 import { add } from '../Store/CartSlice'    // add is an action which comes from the cartslice actions.
+import BackToTopButton from '../BackToTopButton/BackToTopButton'
 
 function Products(e) {
   const dispatch = useDispatch()   // creating a usedispatch hook with dispatch variable.
@@ -41,7 +42,7 @@ function Products(e) {
 
                 <div className='product-content'>
                   <h4>{product.title}</h4>
-                  <h6>{product.price}</h6>
+                  <h6>{product.price} $</h6>
                 </div>
 
                 <div className='product-btn'>
@@ -54,6 +55,7 @@ function Products(e) {
 
         }
       </div>
+      <BackToTopButton/>
     </div>
   </>
   )
