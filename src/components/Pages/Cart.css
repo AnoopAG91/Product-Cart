@@ -1,3 +1,6 @@
+.wrapper {
+    margin-top: 1rem;
+}
 .productCart-container {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +32,3 @@ button {
     padding: 5px 10px;
 }
 
-.wrapper {
-    margin-top: 5rem;
-}
