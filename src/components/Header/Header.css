@@ -23,3 +23,6 @@ a.nav-link a {
 a.nav-link a:hover{
     color: antiquewhite;
 }
+button.navbar-toggler.collapsed {
+    border-color: white;
+}

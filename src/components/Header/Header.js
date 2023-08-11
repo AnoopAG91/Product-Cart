@@ -11,9 +11,9 @@ function Header() {
   const cartProducts = useSelector(state => state.cart)  // create avariable for defining the useslector wit the slice name.
   return (
     <div className='header'>
-    <Navbar expand="lg" className="bg-body-tertiary justify-content-between navbar">
+    <Navbar expand="lg" className="bg-body-tertiary justify-content-between navbar bg-dark">
       <Container>
-        <Navbar.Brand href={"/"}>React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href={"/"}>Product</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" >

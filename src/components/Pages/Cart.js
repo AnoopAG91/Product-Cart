@@ -16,7 +16,8 @@ function Cart() {
   return (
     <div>
          <Header/>
-         <h1>Cart component</h1>
+         <div className='wrapper'>
+         <h1>Cart Items</h1>
 
          <div className='productCart-container'>
          {
@@ -36,7 +37,7 @@ function Cart() {
                 </div>
 
                 <div className='product-btn'>
-                  <button onClick={()=> removeCart(product.id)}>Remove Item</button>  
+                  <button onClick={()=> removeCart(product.id)} style={{backgroundColor:'red'}}>Remove Item</button>  
                   {/* onclick event removecart function takes the id of the product to remove the item by its unique id. */}
                 </div>
                 
@@ -48,6 +49,8 @@ function Cart() {
         }
         </div>
        
+    </div>
+
     </div>
   )
 }
